@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: single_ball_erg
+name: single_ball_erg
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - single_ball_erg_left
+  - single_ball_erg_right

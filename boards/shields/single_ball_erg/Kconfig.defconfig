@@ -1,0 +1,14 @@
+
+if SHIELD_SINGLE_BALL_ERG_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "single_ball_erg"
+
+endif
+
+if SHIELD_SINGLE_BALL_ERG_LEFT || SHIELD_SINGLE_BALL_ERG_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
