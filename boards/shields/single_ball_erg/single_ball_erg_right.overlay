@@ -54,7 +54,7 @@ trackball_listener: trackball_listener {
         /* スクロール設定（Layer 2が有効な時のみ動作） */
         scroll {
             layers = <2>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 24>; 
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 48>; 
         };
     };
 };
