@@ -17,7 +17,7 @@
         compatible = "zmk,combos";
 
         mouse-Layer {
-            bindings = <&tog 3>;
+            bindings = <&tog 2>;
             key-positions = <16 15>;
         };
 
@@ -42,25 +42,16 @@
 
         default {
             bindings = <
-&kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I  &kp RIGHT_PARENTHESIS                                                                      &kp F  &kp S  &kp Y                &kp H                  &kp P
-&kp A             &kp U                   &kp X                 &kp C  &kp O                                                                                      &kp R  &kp K  &kp T                &kp D                  &kp N
-&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V  &lt 5 COMMA            &mt LEFT_SHIFT PERIOD                                &kp BACKSPACE  &kp Z  &kp G  &kp B                &kp L                  &kp M
-&lt 7 LANGUAGE_2  &kp LG(Z)               &kp LS(LG(Z))                                       &kp SPACE              &mkp MB1  &mouse_layer 6 MB1  &lt 4 ENTER                  &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                  &trans  &trans  &trans  &trans                  &trans  &trans  &trans
+&kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I  &kp RIGHT_PARENTHESIS                                                                      &lt 2 F  &lt 2 S  &kp Y                &kp H                  &kp P
+&kp A             &kp U                   &kp X                 &kp C  &kp O                                                                                      &kp R    &kp K    &kp T                &kp D                  &kp N
+&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V  &lt 4 COMMA            &mt LEFT_SHIFT PERIOD                                &kp BACKSPACE  &kp Z    &kp G    &kp B                &kp L                  &kp M
+&lt 6 LANGUAGE_2  &kp LG(Z)               &kp LS(LG(Z))                                       &kp SPACE              &mkp MB1  &mouse_layer 5 MB1  &lt 3 ENTER                      &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
             >;
         };
 
         AML {
             bindings = <
-&none   &none     &none     &none  &none                                           &mouse_layer 3 MB4  &mouse_layer 3 MB5   &none  &none  &kp RG(RC(A))
+&none   &none     &none     &none  &none                                           &mouse_layer 2 MB4  &mouse_layer 2 MB5   &none  &none  &kp RG(RC(A))
 &none   &none     &none     &none  &none                                           &kp RS(RC(TAB))     &kp RC(TAB)          &none  &none  &none
 &none   &none     &none     &none  &trans  &mkp MB3                      &mkp MB3  &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)  &none  &none  &none
 &trans  &mkp MB4  &mkp MB5                 &mkp MB2  &mkp MB1  &mkp MB1  &mkp MB2                                           &none  &none  &trans
@@ -69,10 +60,10 @@
 
         scroll {
             bindings = <
-&kp ESCAPE            &mt HOME END          &kp GLOBE      &kp C           &kp LG(LC(A))                                      &trans                    &trans                 &none                 &mkp MB5              &kp RG(RC(A))
-&kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_1))  &kp LS(LG(X))  &msc SCRL_UP    &kp LG(LEFT)                                       &mt END PAGE_DOWN         &mkp MB1               &mkp MB2              &mkp MB3              &none
-&kp LS(LG(V))         &kp LS(LG(NUMBER_4))  &kp LS(LG(F))  &msc SCRL_DOWN  &trans         &mkp MB3                    &trans  &mt RC(LEFT) RS(RC(TAB))  &mt RC(RIGHT) RC(TAB)  &kp RS(RG(NUMBER_4))  &kp RS(RG(V))         &none
-&trans                &mkp MB4              &mkp MB5                                      &mkp MB2  &mkp MB1  &trans  &trans                                                   &kp RS(RG(NUMBER_1))  &kp RS(RG(NUMBER_2))  &none
+&kp ESCAPE            &mt HOME END          &kp GLOBE      &kp C           &kp LG(LC(A))                                          &trans              &trans               &kp RG(W)             &kp RS(RC(L))  &kp RG(RC(A))
+&kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_1))  &kp LS(LG(X))  &msc SCRL_UP    &kp LG(LEFT)                                           &kp RS(RC(TAB))     &kp RC(TAB)          &kp RG(T)             &kp RG(L)      &kp RS(RG(F))
+&kp LS(LG(V))         &kp LS(LG(NUMBER_4))  &kp LS(LG(F))  &msc SCRL_DOWN  &trans         &mkp MB3                      &mkp MB3  &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)  &kp RS(RG(NUMBER_4))  &kp RS(RG(V))  &kp RG(M)
+&trans                &mkp MB4              &mkp MB5                                      &mkp MB2  &mkp MB1  &mkp MB1  &mkp MB2                                           &none                 &none          &none
             >;
         };
 
