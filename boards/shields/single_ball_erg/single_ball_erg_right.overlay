@@ -48,13 +48,13 @@ trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
         
-        /* XY軸を入れ替え + X軸反転（-90度回転補正） + オートマウスレイヤー（400ms） */
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>, <&zip_temp_layer 1 400>;
+        /* XY軸を入れ替え + Y軸反転 + オートマウスレイヤー（400ms） */
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_temp_layer 1 400>;
 
         /* スクロール設定（Layer 2が有効な時のみ動作） */
         scroll {
             layers = <2>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 16>; 
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 16>; 
         };
     };
 };
