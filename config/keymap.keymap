@@ -62,7 +62,7 @@
             bindings = <
 &kp ESCAPE            &mt HOME END          &kp GLOBE      &kp C           &kp LG(LC(A))                                          &kp RA(RG(UP_ARROW))  &kp RA(RG(DOWN_ARROW))  &kp RG(W)             &kp RS(RC(L))  &kp RG(RC(A))
 &kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_1))  &kp LS(LG(X))  &msc SCRL_UP    &kp LG(LEFT)                                           &kp RS(RC(TAB))       &kp RC(TAB)             &kp RG(T)             &kp RG(L)      &kp RS(RG(F))
-&kp LS(LG(V))         &kp LS(LG(NUMBER_4))  &kp LS(LG(F))  &msc SCRL_DOWN  &trans         &mkp MB3                      &mkp MB3  &kp RC(LEFT_ARROW)    &kp RC(RIGHT_ARROW)     &kp RS(RG(NUMBER_4))  &kp RS(RG(V))  &kp RG(M)
+&kp LS(LG(V))         &kp LS(LG(NUMBER_4))  &kp LS(LG(F))  &msc SCRL_DOWN  &trans         &mkp MB3                      &mkp MB2  &kp RC(LEFT_ARROW)    &kp RC(RIGHT_ARROW)     &kp RS(RG(NUMBER_4))  &kp RS(RG(V))  &kp RG(M)
 &trans                &mkp MB4              &mkp MB5                                      &mkp MB2  &mkp MB1  &mkp MB1  &trans                                                  &none                 &none          &none
             >;
         };
