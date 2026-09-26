@@ -55,6 +55,11 @@ trackball_listener: trackball_listener {
         scroll {
             layers = <2>;
             input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 48>; 
+
+        /* 拡大・縮小用スクロール（Layer 3: 速度を変えたい場合） */
+            zoom_scroll {
+            layers = <5>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 72>;
         };
     };
 };
