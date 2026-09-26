@@ -8,7 +8,7 @@
         mouse_layer: mouse_layer {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
+            tapping-term-ms = <180>;
             bindings = <&mo>, <&mkp>;
         };
     };
