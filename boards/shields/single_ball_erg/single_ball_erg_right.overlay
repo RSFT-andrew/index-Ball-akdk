@@ -54,7 +54,7 @@ trackball_listener: trackball_listener {
         /* 1. 通常スクロール設定 (Layer 2) */
         scroll {
             layers = <2>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 32>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 72>;
         };
     };
 };
