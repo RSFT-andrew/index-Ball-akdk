@@ -47,20 +47,20 @@
 trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        
-        /* XY軸を入れ替え + Y軸反転 + オートマウスレイヤー（400ms） */
+
+        /* デフォルト挙動: XY入れ替え + Y反転 + オートマウスレイヤー (400ms) */
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_temp_layer 1 400>;
 
-        /* スクロール設定（Layer 2が有効な時のみ動作） */
+        /* 1. 通常スクロール設定 (Layer 2) */
         scroll {
             layers = <2>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 48>; 
-　　　　　};
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 48>;
+        };
 
-        /* 拡大・縮小用スクロール（Layer 3: 速度を変えたい場合） */
-            zoom_scroll {
+        /* 2. ズーム用スクロール設定 (Layer 5: より細かく動くよう 1 72 に減速) */
+        zoom_scroll {
             layers = <5>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 72>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 96>;
         };
     };
 };
