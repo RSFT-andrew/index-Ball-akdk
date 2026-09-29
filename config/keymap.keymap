@@ -17,7 +17,7 @@
         compatible = "zmk,combos";
 
         mouse-Layer {
-            bindings = <&tog 2>;
+            bindings = <&tog 0>;
             key-positions = <15 16>;
         };
 
@@ -34,8 +34,8 @@
             bindings = <
 &kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I  &kp RIGHT_PARENTHESIS                                                                      &kp F  &kp S  &kp Y                &kp H                  &kp P
 &kp A             &kp U                   &kp X                 &kp C  &kp O                                                                                      &kp R  &kp K  &kp T                &kp D                  &kp N
-&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V  &lt 4 COMMA            &mt LEFT_SHIFT PERIOD                                &kp BACKSPACE  &kp Z  &kp G  &kp B                &kp L                  &kp M
-&lt 6 LANGUAGE_2  &kp LG(Z)               &kp LS(LG(Z))                                       &kp SPACE              &mkp MB1  &mouse_layer 5 MB1  &lt 3 ENTER                  &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
+&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V  &lt 3 COMMA            &mt LEFT_SHIFT PERIOD                                &kp BACKSPACE  &kp Z  &kp G  &kp B                &kp L                  &kp M
+&lt 5 LANGUAGE_2  &kp LG(Z)               &kp LS(LG(Z))                                       &kp SPACE              &mkp MB1  &mouse_layer 4 MB1  &lt 2 ENTER                  &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
             >;
         };
 
@@ -50,19 +50,10 @@
 
         scroll {
             bindings = <
-&kp ESCAPE            &mt HOME END          &kp GLOBE      &kp C           &kp LG(LC(A))                                          &kp RA(RG(UP_ARROW))  &kp RA(RG(DOWN_ARROW))  &kp RG(W)             &kp RS(RC(L))  &kp RG(RC(A))
-&kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_1))  &kp LS(LG(X))  &msc SCRL_UP    &kp LG(LEFT)                                           &kp RS(RC(TAB))       &kp RC(TAB)             &kp RG(T)             &kp RG(L)      &kp RS(RG(F))
-&kp LS(LG(V))         &kp LS(LG(NUMBER_4))  &kp LS(LG(F))  &msc SCRL_DOWN  &trans         &mkp MB3                      &mkp MB3  &kp RC(LEFT_ARROW)    &kp RC(RIGHT_ARROW)     &kp RS(RG(NUMBER_4))  &kp RS(RG(V))  &kp RG(M)
-&trans                &mkp MB4              &mkp MB5                                      &mkp MB2  &mkp MB1  &mkp MB1  &mkp MB2                                                &trans                &trans         &trans
-            >;
-        };
-
-        mouse-2 {
-            bindings = <
-&kp ESC         &mt HOME END    &kp GLOBE      &kp C           &kp LG(LC(A))                                      &mt HOME END           &kp RS(LEFT)  &kp RS(UP)      &kp RS(RIGHT)  &kp RG(RC(A))
-&kp LS(LG(N2))  &kp LS(LG(N1))  &kp LS(LG(X))  &msc SCRL_UP    &kp LG(LEFT)                                       &kp RC(RIGHT_COMMAND)  &kp UP        &kp RS(DOWN)    &none          &kp RG(LEFT)
-&kp LS(LG(V))   &kp LS(LG(N4))  &kp LS(LG(F))  &msc SCRL_DOWN  &trans         &mkp MB3                    &trans  &kp LEFT               &kp DOWN      &kp RIGHT       &none          &none
-&trans          &kp RG(MINUS)   &kp LG(PLUS)                                  &mkp MB2  &mkp MB1  &trans  &trans                                       &msc SCRL_DOWN  &msc SCRL_UP   &none
+&kp ESC         &mt HOME END    &kp GLOBE      &kp C           &kp LG(LC(A))                                      &mt HOME END           &kp RS(LEFT)  &kp RS(UP)    &kp RS(RIGHT)  &kp RG(RC(A))
+&kp LS(LG(N2))  &kp LS(LG(N1))  &kp LS(LG(X))  &msc SCRL_UP    &kp LG(LEFT)                                       &kp RC(RIGHT_COMMAND)  &kp UP        &kp RS(DOWN)  &none          &kp RG(LEFT)
+&kp LS(LG(V))   &kp LS(LG(N4))  &kp LS(LG(F))  &msc SCRL_DOWN  &trans         &mkp MB3                    &trans  &kp LEFT               &kp DOWN      &kp RIGHT     &none          &none
+&trans          &kp RG(MINUS)   &kp LG(PLUS)                                  &mkp MB2  &mkp MB1  &trans  &trans                                       &trans        &trans         &trans
             >;
         };
 
