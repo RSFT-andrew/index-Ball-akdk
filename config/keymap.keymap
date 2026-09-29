@@ -17,7 +17,7 @@
         compatible = "zmk,combos";
 
         mouse-Layer {
-            bindings = <&tog 0>;
+            bindings = <&tog 2>;
             key-positions = <15 16>;
         };
 
