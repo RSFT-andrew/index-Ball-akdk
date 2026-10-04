@@ -82,10 +82,10 @@
 
         Bluetooth-Other {
             bindings = <
-&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0                                                           &kp RC(RA(R))       &kp RC(RG(LEFT))  &kp RC(RG(UP))     &kp RC(RG(RIGHT))  &none
-&none         &none         &none           &none           &none                                                                  &kp RC(RA(RS(UP)))  &kp RC(RA(UP))    &kp RC(RG(DOWN))   &kp C_VOL_DN       &kp C_VOLUME_UP
-&none         &none         &none           &bt BT_CLR_ALL  &bt BT_CLR    &none                             &kp RC(RA(BACKSPACE))  &kp RC(RA(LEFT))    &kp RC(RA(DOWN))  &kp RC(RA(RIGHT))  &kp C_BRI_DN       &kp C_BRI_UP
-&trans        &bootloader   &studio_unlock                                &none  &trans  &kp RC(RG(ENTER))  &kp RC(RA(ENTER))                                            &trans             &trans             &trans
+&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0                                                            &kp RC(RA(R))       &kp RC(RG(LEFT))  &kp RC(RG(UP))     &kp RC(RG(RIGHT))  &none
+&none         &none         &none           &none           &none                                                                   &kp RC(RA(RS(UP)))  &kp RC(RA(UP))    &kp RC(RG(DOWN))   &kp C_VOL_DN       &kp C_VOLUME_UP
+&none         &none         &none           &bt BT_CLR_ALL  &bt BT_CLR    &none                              &kp RC(RA(BACKSPACE))  &kp RC(RA(LEFT))    &kp RC(RA(DOWN))  &kp RC(RA(RIGHT))  &kp C_BRI_DN       &kp C_BRI_UP
+&trans        &bootloader   &studio_unlock                                &trans  &trans  &kp RC(RG(ENTER))  &kp RC(RA(ENTER))                                            &trans             &trans             &trans
             >;
         };
     };
