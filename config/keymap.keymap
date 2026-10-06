@@ -55,10 +55,10 @@
 
         scroll {
             bindings = <
-&kp ESC         &mt HOME END    &kp GLOBE      &kp C           &kp LG(LC(A))                                      &mt HOME END           &kp RS(LEFT)  &kp RS(UP)     &kp RS(RIGHT)  &kp RG(RC(A))
-&kp LS(LG(N2))  &kp LS(LG(N1))  &kp LS(LG(X))  &msc SCRL_UP    &kp LG(LEFT)                                       &kp RC(RIGHT_COMMAND)  &kp UP        &kp RS(DOWN)   &none          &kp RG(LEFT)
-&kp LS(LG(V))   &kp LS(LG(N4))  &kp LS(LG(F))  &msc SCRL_DOWN  &trans         &mkp MB3                    &trans  &kp LEFT               &kp DOWN      &kp RIGHT      &none          &none
-&trans          &kp RG(MINUS)   &kp LG(PLUS)                                  &mkp MB2  &mkp MB1  &trans  &trans                                       &kp RG(MINUS)  &kp RG(PLUS)   &trans
+&kp ESC         &mt HOME END    &kp GLOBE      &kp C           &kp LG(LC(A))                                      &mt HOME END           &kp RS(LEFT)  &kp RS(UP)    &kp RS(RIGHT)  &kp RG(RC(A))
+&kp LS(LG(N2))  &kp LS(LG(N1))  &kp LS(LG(X))  &msc SCRL_UP    &kp LG(LEFT)                                       &kp RC(RIGHT_COMMAND)  &kp UP        &kp RS(DOWN)  &none          &kp RG(LEFT)
+&kp LS(LG(V))   &kp LS(LG(N4))  &kp LS(LG(F))  &msc SCRL_DOWN  &trans         &mkp MB3                    &trans  &kp LEFT               &kp DOWN      &kp RIGHT     &none          &none
+&trans          &kp RG(MINUS)   &kp LG(PLUS)                                  &mkp MB2  &mkp MB1  &trans  &trans                                       &trans        &trans         &trans
             >;
         };
 
