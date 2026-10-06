@@ -16,8 +16,8 @@
     combos {
         compatible = "zmk,combos";
 
-        mouse-Layer1 {
-            bindings = <&tog 1>;
+        mouse-Layer {
+            bindings = <&tog 6>;
             key-positions = <15 16>;
         };
 
@@ -73,10 +73,10 @@
 
         symbol {
             bindings = <
-&kp ESCAPE         &kp LEFT_BRACE  &kp LBKT      &kp RIGHT_BRACE  &kp RBKT                                                  &kp RA(RG(UP_ARROW))  &kp RA(RG(DOWN_ARROW))  &kp RG(W)             &kp RS(RC(L))  &kp RG(RC(A))
-&kp DOUBLE_QUOTES  &kp SEMICOLON   &kp BSLH      &kp COLON        &kp CARET                                                 &kp RC(RS(TAB))       &kp RC(TAB)             &kp RG(T)             &kp RG(L)      &kp RS(RG(F))
-&kp APOS           &kp GRAVE       &kp EQUAL     &kp UNDERSCORE   &kp LESS_THAN  &kp GREATER_THAN                  &kp DEL  &kp RC(LEFT)          &kp RC(RIGHT)           &kp RS(RG(NUMBER_4))  &kp RS(RG(V))  &kp RG(M)
-&trans             &kp LG(RBKT)    &kp LG(BSLH)                                  &trans            &trans  &trans  &trans                                                 &trans                &trans         &trans
+&kp ESCAPE         &kp LEFT_BRACE  &kp LBKT      &kp RIGHT_BRACE  &kp RBKT                                                  &mkp MB4         &mkp MB5       &kp RG(W)             &kp RS(RC(L))     &kp RG(RC(A))
+&kp DOUBLE_QUOTES  &kp SEMICOLON   &kp BSLH      &kp COLON        &kp CARET                                                 &kp RC(RS(TAB))  &kp RC(TAB)    &kp RG(T)             &kp RG(L)         &kp RS(RG(F))
+&kp APOS           &kp GRAVE       &kp EQUAL     &kp UNDERSCORE   &kp LESS_THAN  &kp GREATER_THAN                  &kp DEL  &kp RC(LEFT)     &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))  &kp RS(RG(V))     &kp RG(M)
+&trans             &kp LG(RBKT)    &kp LG(BSLH)                                  &trans            &trans  &trans  &trans                                   &kp RA(RG(UP))        &kp RA(RG(DOWN))  &trans
             >;
         };
 
@@ -86,6 +86,15 @@
 &none         &none         &none           &none           &none                                                                   &kp RC(RA(RS(UP)))  &kp RC(RA(UP))    &kp RC(RG(DOWN))   &kp C_VOL_DN       &kp C_VOLUME_UP
 &none         &none         &none           &bt BT_CLR_ALL  &bt BT_CLR    &none                              &kp RC(RA(BACKSPACE))  &kp RC(RA(LEFT))    &kp RC(RA(DOWN))  &kp RC(RA(RIGHT))  &kp C_BRI_DN       &kp C_BRI_UP
 &trans        &bootloader   &studio_unlock                                &trans  &trans  &kp RC(RG(ENTER))  &kp RC(RA(ENTER))                                            &trans             &trans             &trans
+            >;
+        };
+
+        mouseLayer {
+            bindings = <
+&none   &none     &none     &none  &none                                                    &mkp MB4         &mkp MB5       &kp RG(W)             &kp RS(RG(NUMBER_2))  &kp RG(RC(A))
+&none   &none     &none     &none  &none                                                    &kp RS(RC(TAB))  &kp RC(TAB)    &kp RG(T)             &kp RS(RG(NUMBER_1))  &kp RG(LEFT)
+&none   &none     &none     &none  &mo 3  &mkp MB3                      &mkp MB3            &kp RC(LEFT)     &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))  &kp RS(RG(V))         &kp RG(M)
+&trans  &mkp MB4  &mkp MB5                &mkp MB2  &mkp MB1  &mkp MB1  &mouse_layer 2 MB2                                  &kp RA(RG(UP))        &kp RA(RG(DOWN))      &trans
             >;
         };
     };
