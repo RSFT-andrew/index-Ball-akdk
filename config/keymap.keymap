@@ -73,10 +73,10 @@
 
         symbol {
             bindings = <
-&kp ESCAPE         &kp LEFT_BRACE  &kp LBKT      &kp RIGHT_BRACE  &kp RBKT                                                  &mkp MB4         &mkp MB5       &kp RG(W)             &kp RS(RC(L))     &kp RG(RC(A))
-&kp DOUBLE_QUOTES  &kp SEMICOLON   &kp BSLH      &kp COLON        &kp CARET                                                 &kp RC(RS(TAB))  &kp RC(TAB)    &kp RG(T)             &kp RG(L)         &kp RS(RG(F))
-&kp APOS           &kp GRAVE       &kp EQUAL     &kp UNDERSCORE   &kp LESS_THAN  &kp GREATER_THAN                  &kp DEL  &kp RC(LEFT)     &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))  &kp RS(RG(V))     &kp RG(M)
-&trans             &kp LG(RBKT)    &kp LG(BSLH)                                  &trans            &trans  &trans  &trans                                   &kp RA(RG(UP))        &kp RA(RG(DOWN))  &trans
+&kp ESCAPE         &kp LEFT_BRACE  &kp LBKT      &kp RIGHT_BRACE  &kp RBKT                                                  &mkp MB4         &mkp MB5       &kp RG(W)                 &kp RS(RC(L))              &kp RG(RC(A))
+&kp DOUBLE_QUOTES  &kp SEMICOLON   &kp BSLH      &kp COLON        &kp CARET                                                 &kp RC(RS(TAB))  &kp RC(TAB)    &kp RG(T)                 &kp RG(L)                  &kp RS(RG(F))
+&kp APOS           &kp GRAVE       &kp EQUAL     &kp UNDERSCORE   &kp LESS_THAN  &kp GREATER_THAN                  &kp DEL  &kp RC(LEFT)     &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))      &kp RS(RG(V))              &kp RG(M)
+&trans             &kp LG(RBKT)    &kp LG(BSLH)                                  &trans            &trans  &trans  &trans                                   &mt RA(RG(UP)) RG(MINUS)  &mt RA(RG(DOWN)) RG(PLUS)  &trans
             >;
         };
 
