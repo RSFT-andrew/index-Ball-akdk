@@ -91,10 +91,10 @@
 
         mouseLayer {
             bindings = <
-&none   &none     &none     &none  &none                                                    &mkp MB4         &mkp MB5       &kp RG(W)             &kp RS(RG(NUMBER_2))  &kp RG(RC(A))
-&none   &none     &none     &none  &none                                                    &kp RS(RC(TAB))  &kp RC(TAB)    &kp RG(T)             &kp RS(RG(NUMBER_1))  &kp RG(LEFT)
-&none   &none     &none     &none  &mo 3  &mkp MB3                      &mkp MB3            &kp RC(LEFT)     &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))  &kp RS(RG(V))         &kp RG(M)
-&trans  &mkp MB4  &mkp MB5                &mkp MB2  &mkp MB1  &mkp MB1  &mouse_layer 2 MB2                                  &kp RA(RG(UP))        &kp RA(RG(DOWN))      &trans
+&none   &none     &none     &none  &none                                                    &mkp MB4         &mkp MB5       &kp RG(W)                 &kp RS(RG(NUMBER_2))       &kp RG(RC(A))
+&none   &none     &none     &none  &none                                                    &kp RS(RC(TAB))  &kp RC(TAB)    &kp RG(T)                 &kp RS(RG(NUMBER_1))       &kp RG(LEFT)
+&none   &none     &none     &none  &mo 3  &mkp MB3                      &mkp MB3            &kp RC(LEFT)     &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))      &kp RS(RG(V))              &kp RG(M)
+&trans  &mkp MB4  &mkp MB5                &mkp MB2  &mkp MB1  &mkp MB1  &mouse_layer 2 MB2                                  &mt RA(RG(UP)) RG(MINUS)  &mt RA(RG(DOWN)) RG(PLUS)  &trans
             >;
         };
     };
