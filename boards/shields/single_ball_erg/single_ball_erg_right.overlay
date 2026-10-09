@@ -51,9 +51,9 @@ trackball_listener: trackball_listener {
         /* デフォルト挙動: XY入れ替え + Y反転 + オートマウスレイヤー (400ms) */
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_temp_layer 1 400>;
 
-        /* 1. 通常スクロール設定 (Layer 2) */
+        /* 1. 通常スクロール設定 (Layer 3) */
         scroll {
-            layers = <2>;
+            layers = <3>;
             input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 72>;
         };
     };
