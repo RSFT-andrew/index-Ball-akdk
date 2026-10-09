@@ -17,7 +17,7 @@
         compatible = "zmk,combos";
 
         mouse-Layer {
-            bindings = <&to 6>;
+            bindings = <&to 2>;
             key-positions = <15 16>;
         };
 
@@ -27,7 +27,7 @@
         };
 
         mouse-Layer2 {
-            bindings = <&tog 2>;
+            bindings = <&tog 3>;
             key-positions = <28 27>;
         };
     };
@@ -39,8 +39,8 @@
             bindings = <
 &kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I  &kp RIGHT_PARENTHESIS                                                                      &kp F  &kp S  &kp Y                &kp H                  &kp P
 &kp A             &kp U                   &kp X                 &kp C  &kp O                                                                                      &kp R  &kp K  &kp T                &kp D                  &kp N
-&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V  &lt 3 COMMA            &mt LEFT_SHIFT PERIOD                                &kp BACKSPACE  &kp Z  &kp G  &kp B                &kp L                  &kp M
-&lt 5 LANGUAGE_2  &kp LG(Z)               &kp LS(LG(Z))                                       &kp SPACE              &mkp MB1  &mouse_layer 4 MB1  &lt 2 ENTER                  &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
+&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V  &lt 4 COMMA            &mt LEFT_SHIFT PERIOD                                &kp BACKSPACE  &kp Z  &kp G  &kp B                &kp L                  &kp M
+&lt 6 LANGUAGE_2  &kp LG(Z)               &kp LS(LG(Z))                                       &kp SPACE              &mkp MB1  &mouse_layer 5 MB1  &lt 3 ENTER                  &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
             >;
         };
 
@@ -49,7 +49,16 @@
 &none   &none     &none     &none  &none                                                     &mkp MB4            &mkp MB5             &kp RG(W)             &kp RA(RG(UP))    &kp RG(RC(A))
 &none   &none     &none     &none  &none                                                     &kp RS(RC(TAB))     &kp RC(TAB)          &kp RG(T)             &kp RA(RG(DOWN))  &kp RG(LEFT)
 &none   &none     &none     &none  &trans  &mkp MB3                      &mkp MB3            &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)  &kp RS(RG(NUMBER_4))  &kp RS(RG(V))     &kp RG(M)
-&trans  &mkp MB4  &mkp MB5                 &mkp MB2  &mkp MB1  &mkp MB1  &mouse_layer 2 MB2                                           &trans                &trans            &trans
+&trans  &mkp MB4  &mkp MB5                 &mkp MB2  &mkp MB1  &mkp MB1  &mouse_layer 3 MB2                                           &trans                &trans            &trans
+            >;
+        };
+
+        mouseLayer {
+            bindings = <
+&none   &none     &none     &none  &none                                                    &mkp MB4         &mkp MB5       &kp RG(W)                 &kp RS(RG(NUMBER_2))       &kp RG(RC(A))
+&none   &none     &none     &none  &none                                                    &kp RS(RC(TAB))  &kp RC(TAB)    &kp RG(T)                 &kp RS(RG(NUMBER_1))       &kp RG(LEFT)
+&none   &none     &none     &none  &mo 4  &mkp MB3                      &mkp MB3            &kp RC(LEFT)     &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))      &kp RS(RG(V))              &kp RG(M)
+&trans  &mkp MB4  &mkp MB5                &mkp MB2  &mkp MB1  &mkp MB1  &mouse_layer 3 MB2                                  &mt RA(RG(UP)) RG(MINUS)  &mt RA(RG(DOWN)) RG(PLUS)  &trans
             >;
         };
 
@@ -86,15 +95,6 @@
 &none         &none         &none           &none           &none                                                                   &kp RC(RA(RS(UP)))  &kp RC(RA(UP))    &kp RC(RG(DOWN))   &kp C_VOL_DN       &kp C_VOLUME_UP
 &none         &none         &none           &bt BT_CLR_ALL  &bt BT_CLR    &none                              &kp RC(RA(BACKSPACE))  &kp RC(RA(LEFT))    &kp RC(RA(DOWN))  &kp RC(RA(RIGHT))  &kp C_BRI_DN       &kp C_BRI_UP
 &trans        &bootloader   &studio_unlock                                &trans  &trans  &kp RC(RG(ENTER))  &kp RC(RA(ENTER))                                            &trans             &trans             &trans
-            >;
-        };
-
-        mouseLayer {
-            bindings = <
-&none   &none     &none     &none  &none                                          &mkp MB4         &mkp MB5       &kp RG(W)                 &kp RS(RG(NUMBER_2))       &kp RG(RC(A))
-&none   &none     &none     &none  &none                                          &kp RS(RC(TAB))  &kp RC(TAB)    &kp RG(T)                 &kp RS(RG(NUMBER_1))       &kp RG(LEFT)
-&none   &none     &none     &none  &mo 3  &mkp MB3                      &mkp MB3  &kp RC(LEFT)     &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))      &kp RS(RG(V))              &kp RG(M)
-&trans  &mkp MB4  &mkp MB5                &mkp MB2  &mkp MB1  &mkp MB1  &mo 2                                     &mt RA(RG(UP)) RG(MINUS)  &mt RA(RG(DOWN)) RG(PLUS)  &trans
             >;
         };
     };
