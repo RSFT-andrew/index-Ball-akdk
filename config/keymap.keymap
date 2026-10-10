@@ -11,6 +11,24 @@
             tapping-term-ms = <180>;
             bindings = <&mo>, <&mkp>;
         };
+
+        mousekp_kp: mousekp_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSEKP_KP";
+            bindings = <&mkp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
+
+        kp_mousekp: kp_mousekp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KP_MOUSEKP";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
     };
 
     combos {
@@ -46,19 +64,19 @@
 
         AML {
             bindings = <
-&none   &none     &none     &none  &none                                                     &mkp MB4            &mkp MB5             &kp RG(W)             &kp RA(RG(UP))    &kp RG(RC(A))
-&none   &none     &none     &none  &none                                                     &kp RS(RC(TAB))     &kp RC(TAB)          &kp RG(T)             &kp RA(RG(DOWN))  &kp RG(LEFT)
-&none   &none     &none     &none  &trans  &mkp MB3                      &mkp MB3            &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)  &kp RS(RG(NUMBER_4))  &kp RS(RG(V))     &kp RG(M)
-&trans  &mkp MB4  &mkp MB5                 &mkp MB2  &mkp MB1  &mkp MB1  &mouse_layer 3 MB2                                           &trans                &trans            &trans
+&none   &none     &none     &none  &none                                              &mkp MB4            &mkp MB5             &kp RG(W)             &kp RA(RG(UP))    &kp RG(RC(A))
+&none   &none     &none     &none  &none                                              &kp RS(RC(TAB))     &kp RC(TAB)          &kp RG(T)             &kp RA(RG(DOWN))  &kp RG(LEFT)
+&none   &none     &none     &none  &trans  &mkp MB3                      &mkp MB2     &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)  &kp RS(RG(NUMBER_4))  &kp RS(RG(V))     &kp RG(M)
+&trans  &mkp MB4  &mkp MB5                 &mkp MB2  &mkp MB1  &mkp MB1  &lt 3 ENTER                                           &trans                &trans            &trans
             >;
         };
 
         mouseLayer {
             bindings = <
-&none   &none     &none     &none  &none                                                    &mkp MB4         &mkp MB5       &kp RG(W)                 &kp RS(RG(NUMBER_2))       &kp RG(RC(A))
-&none   &none     &none     &none  &none                                                    &kp RS(RC(TAB))  &kp RC(TAB)    &kp RG(T)                 &kp RS(RG(NUMBER_1))       &kp RG(LEFT)
-&none   &none     &none     &none  &mo 4  &mkp MB3                      &mkp MB3            &kp RC(LEFT)     &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))      &kp RS(RG(V))              &kp RG(M)
-&trans  &mkp MB4  &mkp MB5                &mkp MB2  &mkp MB1  &mkp MB1  &mouse_layer 3 MB2                                  &mt RA(RG(UP)) RG(MINUS)  &mt RA(RG(DOWN)) RG(PLUS)  &trans
+&none   &none     &none     &none  &none                                                               &mkp MB4         &mkp MB5       &kp RG(W)                 &kp RS(RG(NUMBER_2))       &kp RG(RC(A))
+&none   &none     &none     &none  &none                                                               &kp RS(RC(TAB))  &kp RC(TAB)    &kp RG(T)                 &kp RS(RG(NUMBER_1))       &kp RG(LEFT)
+&none   &none     &none     &none  &mo 4  &kp_mousekp LEFT_SHIFT MB3                      &mkp MB2     &kp RC(LEFT)     &kp RC(RIGHT)  &kp RS(RG(NUMBER_4))      &kp RS(RG(V))              &kp RG(M)
+&trans  &mkp MB4  &mkp MB5                &mousekp_kp MB2 SPACE       &mkp MB1  &mkp MB1  &lt 3 ENTER                                  &mt RA(RG(UP)) RG(MINUS)  &mt RA(RG(DOWN)) RG(PLUS)  &trans
             >;
         };
 
