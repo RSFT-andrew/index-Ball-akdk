@@ -35,7 +35,7 @@
         compatible = "zmk,combos";
 
         mouse-Layer {
-            bindings = <&to 2>;
+            bindings = <&tog 2>;
             key-positions = <15 16>;
         };
 
@@ -44,7 +44,7 @@
             key-positions = <5 6>;
         };
 
-        mouse-Layer2 {
+        Layer3 {
             bindings = <&tog 3>;
             key-positions = <28 27>;
         };
@@ -52,6 +52,11 @@
         MouseButton3 {
             bindings = <&mkp MB3>;
             key-positions = <26 38>;
+        };
+
+        Layer4 {
+            bindings = <&tog 4>;
+            key-positions = <28 29>;
         };
     };
 
