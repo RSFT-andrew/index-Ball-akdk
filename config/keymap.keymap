@@ -68,6 +68,11 @@
             bindings = <&mkp MB3>;
             key-positions = <38 26>;
         };
+
+        Reload {
+            bindings = <&kp RG(R)>;
+            key-positions = <37 38>;
+        };
     };
 
     keymap {
