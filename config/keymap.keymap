@@ -73,6 +73,16 @@
             bindings = <&kp RG(R)>;
             key-positions = <37 38>;
         };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <26 27>;
+        };
+
+        BackSpace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <26 15>;
+        };
     };
 
     keymap {
