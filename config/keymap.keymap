@@ -39,22 +39,22 @@
             key-positions = <15 16>;
         };
 
-        Layer3 {
+        Scroll {
             bindings = <&tog 3>;
             key-positions = <28 27>;
         };
 
-        Layer4 {
+        Number {
             bindings = <&tog 4>;
             key-positions = <6 7>;
         };
 
-        Layer5 {
+        Symbol {
             bindings = <&tog 5>;
             key-positions = <16 17>;
         };
 
-        Layer6 {
+        BluetoothOther {
             bindings = <&tog 6>;
             key-positions = <28 29>;
         };
